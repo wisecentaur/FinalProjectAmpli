@@ -1,0 +1,9 @@
+export const HOME = "/";
+export const MYACCOUNT = "/my account";
+export const TOPBLOGS = "/top blogs";
+export const RATINGS  = "/ratings";
+export const NEWS = "/news";
+export const CONTACTS = "/contacts";
+export const REGISTER ='/register';
+export const LOGIN = '/my account'
+export const FILM = '/film'

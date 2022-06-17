@@ -1,0 +1,109 @@
+.news-text{
+    display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.87);
+}
+
+.news{
+    padding-top: 10rem;
+    background-color: #FFFFF0;
+    padding-bottom: 10rem;
+}
+
+.all-news{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.n{
+  width: 35rem;
+  border-radius: 5px;
+}
+
+.card-n{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    background-color: white;
+  width: 35rem;
+}
+
+.new-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.new-title{
+  display: flex;
+  justify-content: center;;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.87);
+  font-size: 18px;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 30px;
+  
+}
+
+.new-main{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: rgba(0,0,0,0.87);
+  padding-bottom: 1.5rem;
+  line-height: 30px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+.n-a{
+  color: rgba(0,0,0,0.87);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding-bottom: 1.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+.n-p{
+  color: rgba(0,0,0,0.87);
+  padding-right: 2rem;
+  font-size: 16px;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 9rem;
+}
+
+.end-n-text{
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.87);
+  padding-top: 10rem;
+}

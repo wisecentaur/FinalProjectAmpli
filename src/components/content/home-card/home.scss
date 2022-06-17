@@ -1,0 +1,98 @@
+.Text {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.87);
+}
+
+
+.end-Text {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.home {
+    padding-top: 10rem;
+    background-color: #FFFFF0;
+    padding-bottom: 10rem;
+}
+  
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+  .container {
+    padding: 2px 16px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 24rem;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+  }
+
+  .films_and_serials {
+      margin-top: 10rem;
+      flex-direction: column;
+  }
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: rgba(0,0,0,0.87);
+  align-items: center;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  display: flex;
+  justify-content: right;
+  font-size: 15px;
+}
+
+.film {
+  width: 24rem;
+  border-radius: 5px;
+ 
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 9rem;
+}
+
+.third-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 9rem;
+}
+
+
