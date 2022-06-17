@@ -38,6 +38,7 @@ interface ICast{
 }
 
 interface IFilm{
+	ID: number;
 	Cast: ICast;
 	Myopinion: IMyopinion;
 	Boxoffice: string;

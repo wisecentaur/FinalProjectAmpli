@@ -1,5 +1,6 @@
 import React from "react";
 import './myaccount.scss'
+import editingimg from '../../../images/pencil.png'
 
 export default function Myaccount(){
     return(
@@ -12,15 +13,15 @@ export default function Myaccount(){
                 <hr></hr>    
                 <div className="all-d"><div className="data-1">Nickname: </div><div className="data">@ABC;</div></div>
                 <hr></hr>
-                <div className="all-d"><div className="data-1">Favorite Film: </div><div className="data">"Avengers: Endgame", "Batman";</div></div>
+                <div className="all-d"><div className="data-1">Favorite Film: </div><div className="data">"Avengers: Endgame", "Batman";</div><div className="editing"><img src={editingimg} className="edit"/></div></div>
                 <hr></hr>
-                <div className="all-d"><div className="data-1">Favorite Serial: </div><div className="data">"Stranger Things";</div></div>
+                <div className="all-d"><div className="data-1">Favorite Serial: </div><div className="data">"Stranger Things";</div><div className="editing"><img src={editingimg} className="edit"/></div></div>
                 <hr></hr>
-                <div className="all-d"><div className="data-1">Favorite Cartoon: </div><div className="data">"Minions";</div></div>
+                <div className="all-d"><div className="data-1">Favorite Cartoon: </div><div className="data">"Minions";</div><div className="editing"><img src={editingimg} className="edit"/></div></div>
                 <hr></hr>
-                <div className="all-d"><div className="data-1">Favorite Actor: </div><div className="data">Dwayne Johnson, Tom Cruise, Johnny Depp;</div></div>
+                <div className="all-d"><div className="data-1">Favorite Actor: </div><div className="data">Dwayne Johnson, Tom Cruise, Johnny Depp;</div><div className="editing"><img src={editingimg} className="edit"/></div></div>
                 <hr></hr>
-                <div className="all-d"><div className="data-1">Favorite Genres: </div><div className="data">thriller, action, detective;</div></div>
+                <div className="all-d"><div className="data-1">Favorite Genres: </div><div className="data">thriller, action, detective;</div><div className="editing"><img src={editingimg} className="edit"/></div></div>
                 <hr></hr>
                 <div className="all-d"><div className="data-1">Awards: </div><div className="data">discussant(wrote 137 comments), optimist(average movie rating 8.5);</div></div>
                 <hr></hr>

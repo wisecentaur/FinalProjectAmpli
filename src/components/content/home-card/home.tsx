@@ -12,101 +12,32 @@ import f8 from '../../../images/f8.png'
 import f9 from '../../../images/f9.png'
 import { Link, Route } from 'react-router-dom'
 
+interface IProps{
+   films:IFilm[];
+}
 
-
-export default function Home(){
+export default function Home(props:IProps){
 
   return(<div className='home'>
         <div className='Text'>
             MOST POPULAR POSTS
         </div>
       <div className='films_and_serials'>
-        <div className='first-row'> 
-        <Card>   
-        <Link to="/creationinfo/0">
-        <img src={f1} alt="film" className='film' />
-           <div className="container">
-             <h4>Death On The Nile</h4>
-            <p>@FallenStar</p>
-           </div>
-        </Link>  
-        </Card>  
-        <Card>
-        <a href="film">
-        <img src={f2} alt="film" className='film' />
-           <div className="container">
-             <h4>The Adam Project</h4>
-            <p>@Loosetooth</p>
-           </div>
-        </a>
-        </Card>
-        <Card>
-        <a href="film">
-        <img src={f3} alt="film" className='film' />
-           <div className="container">
-             <h4>Uncharted</h4>
-            <p>@Superman</p>
-           </div>
-        </a>
-        </Card>
-        </div>
-        <div className='second-row'>
-        <Card>
-        <a href="film">
-        <img src={f4} alt="film" className='film' />
-           <div className="container">
-             <h4>Moon Knight</h4>
-            <p>@Shrek</p>
-           </div>
-        </a>
-        </Card>
-        <Card>
-        <a href="film">
-        <img src={f5} alt="film" className='film' />
-           <div className="container">
-             <h4>Don't Look Up</h4>
-            <p>@Dessert</p>
-           </div>
-        </a>
-        </Card>
-        <Card>
-        <a href="film">
-        <img src={f6} alt="film" className='film' />
-           <div className="container">
-             <h4>Dolittle</h4>
-            <p>@WiseCentaur</p>
-           </div>
-        </a>
-        </Card>
-        </div>
-        <div className='third-row'>
-        <Card>
-        <a href="film">
-        <img src={f7} alt="film" className='film' />
-           <div className="container">
-             <h4>Spider-Man: No Way Home</h4>
-            <p>@Skittle</p>
-           </div>
-        </a>
-        </Card>
-        <Card>
-        <a href="film">
-        <img src={f8} alt="film" className='film'/>
-           <div className="container">
-             <h4>Finch</h4>
-            <p>@ReynerGhost</p>
-           </div>
-        </a>
-        </Card>
-        <Card>
-        <a href="film">
-        <img src={f9} alt="film" className='film' />
-           <div className="container">
-             <h4>Sherlock Holmes</h4>
-            <p>@StrangeOrange</p>
-           </div>
-        </a>
-        </Card>
+        <div className='first-row'>
+         {props.films.map((f)=>(
+            <div className='film-card'>
+            <Card>   
+            <Link to={`/creationinfo/${f.ID}`}>
+            <img src={f.image} alt="film" className='film' />
+               <div className="container">
+                 <h4>{f.name}</h4>
+                <p>{f.Myopinion.author}</p>
+               </div>
+            </Link>  
+            </Card>
+            </div>
+         ))} 
+        
         </div>
       </div>
       <div className='end-Text'>

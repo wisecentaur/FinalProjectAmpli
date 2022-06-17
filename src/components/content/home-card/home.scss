@@ -16,7 +16,7 @@
   font-weight: bolder;
   word-spacing: 10px;
   font-family: 'Roboto', sans-serif;
-  margin-top: 10rem;
+  margin-top: 1rem;
   color: rgba(0,0,0,0.87);
 }
 
@@ -78,6 +78,7 @@ p{
 .first-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -93,6 +94,10 @@ p{
   flex-direction: row;
   justify-content: space-around;
   margin-top: 9rem;
+}
+
+.film-card{
+  margin-bottom: 9rem;
 }
 
 

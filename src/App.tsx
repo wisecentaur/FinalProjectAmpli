@@ -15,8 +15,14 @@ import Myaccount from './components/content/myaccount/myaccount';
 function App() {
 const [films, setfilms] = React.useState<IFilm[]>([])
 const [isloading, setloading] = React.useState(true)
+const setfilmswithids=(filmsdata:IFilm[])=>{
+ setfilms(filmsdata.map((f,i)=>{
+  f.ID=i;
+  return f;
+ }))
+}
 useEffect(()=>{
-  getFilms().then(answer=>{setfilms(answer.data)}).finally(()=>setloading(false))
+  getFilms().then(answer=>{setfilmswithids(answer.data)}).finally(()=>setloading(false))
 }, [])
 
 if( isloading) return<div>Loading...</div>
@@ -26,7 +32,7 @@ if( isloading) return<div>Loading...</div>
     <BrowserRouter> 
     <Switch>
       <Route exact path="/">
-    <div><Home/></div>
+    <div><Home films={films}/></div>
       </Route>
       <Route exact path ='/my account'>
         <div><Myaccount/></div>
@@ -41,7 +47,7 @@ if( isloading) return<div>Loading...</div>
         <div><News/></div> 
       </Route>
       <Route path="/creationinfo/:id" component={()=>(
-        <Film/>
+        <Film films={films}/>
       )}>
 
       </Route>
